@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 20 - Proyecto integrador: Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Mate&Co</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Todo lo que necesitás para cebar como un experto</h1>
+            <p>Productos artesanales para los amantes del mate.</p>
+            <div class="promo-banner">
+                <span class="promo-tag">🔥 Oferta especial</span>
+                <p class="promo-texto">20% OFF en tu primer pedido usando el código <strong>MATE20</strong></p>
+                <a href="#servicios" class="promo-btn">Ver productos</a>
+            </div>
+            <p class="promo-continuidad">¡Explora nuestra línea de productos y lleva la tradición del mate a tu hogar!</p>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2>Nuestros productos</h2>
+            <div class="grid-servicios">
+                <div class="servicio-card">
+                    <img src="img/mate-negro-caja.jpg" alt="Mate negro con caja de presentación mateando">
+                    <h3>Mates premium con estuche</h3>
+                    <p>Presentación de lujo, ideales para regalo.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="img/mate-plateado-grabado.jpg" alt="Mate con terminación en plata y grabados artesanales">
+                    <h3>Mates con terminación en plata</h3>
+                    <p>Grabados a mano por artesanos locales.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="img/mate-madera-bombilla.jpg" alt="Mate de madera natural con bombilla de acero">
+                    <h3>Mates de madera</h3>
+                    <p>Con bombilla de acero inoxidable incluida.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="img/set-completo-termo.jpg" alt="Set completo de mate con termo y accesorios de cuero">
+                    <h3>Sets completos</h3>
+                    <p>Termo, yerbera y mate en un mismo set.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="img/mate-rustico-tronco.png"
+                        alt="Mate rústico tallado en tronco de árbol junto a un arroyo">
+                    <h3>Mates rústicos</h3>
+                    <p>Tallados en tronco, únicos e irrepetibles.</p>
+                </div>
+                <div class="servicio-card">
+                    <img src="img/porta-termo.png" alt="Porta termo de madera resistente">
+                    <h3>Porta termo</h3>
+                    <p>Resistente y práctico para llevar tu termo favorito.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="carrusel">
+                <div class="testimonio-card">
+                    <p>"El mejor mate que compré en años."</p>
+                    <span>— Julieta R.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Envío rápido y productos de calidad."</p>
+                    <span>— Martín F.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"La yerba tiene un sabor increíble."</p>
+                    <span>— Carla D.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Producto perfecto para mis mates matutinos."</p>
+                    <span>— Pablo G.</span>
+                </div>
+                <div class="testimonio-card">
+                    <p>"Los mates son de alta calidad y muy hermosos."</p>
+                    <span>— Sofía L.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contactanos</h2>
+            <form action="#" method="post" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mate&amp;Co. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

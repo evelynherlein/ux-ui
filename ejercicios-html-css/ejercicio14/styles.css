@@ -1,0 +1,42 @@
+:root {
+    --color-primario: #432c4a;
+    --color-secundario: #d397f7;
+    --color-fondo: #ffffff;
+    --color-texto: #333333;
+    --espaciado: 16px;
+}
+
+/* Modo oscuro: redefine las mismas variables, el resto del CSS no cambia */
+body.modo-oscuro {
+    --color-fondo: #1c1c1c;
+    --color-texto: #f0f0f0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+    background-color: var(--color-primario);
+    color: #ffffff;
+    padding: var(--espaciado);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido {
+    padding: calc(var(--espaciado) * 2);
+}
+
+.boton-primario {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    border: none;
+    padding: var(--espaciado);
+    border-radius: 6px;
+    cursor: pointer;
+}

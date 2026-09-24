@@ -1,0 +1,32 @@
+.lista-enlaces {
+    list-style: none;
+    padding: 0;
+    max-width: 240px;
+}
+
+.lista-enlaces li {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Pseudo-elemento: agrega un ícono decorativo antes de cada link */
+.lista-enlaces li::before {
+    content: "→ ";
+    color: #432c4a;
+}
+
+/* Pseudo-clase :hover: cambia el color de fondo al pasar el mouse */
+.lista-enlaces a:hover {
+    background-color: #f0ede4;
+}
+
+.lista-enlaces a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+}
+
+/* Pseudo-clase :nth-child(): alterna el color de fondo de los elementos pares */
+.lista-enlaces li:nth-child(even) {
+    background-color: #fafafa;
+}

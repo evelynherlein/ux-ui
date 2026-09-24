@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 - Tabla de datos</title>
+</head>
+<body>
+    <h1>Horario semanal de clases</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>08:00 - 10:00</th>
+                <td>Programación I</td>
+                <td>Matemática</td>
+                <td>Programación I</td>
+                <td>Matemática</td>
+                <td rowspan="2">Taller de Diseño UX/UI</td>
+            </tr>
+            <tr>
+                <th>10:00 - 12:00</th>
+                <td>Base de Datos</td>
+                <td>Inglés Técnico</td>
+                <td>Base de Datos</td>
+                <td>Inglés Técnico</td>
+            </tr>
+            <tr>
+                <th>14:00 - 16:00</th>
+                <td colspan="5">Trabajo práctico integrador (laboratorio libre)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Horario sujeto a cambios según cronograma académico 2026.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

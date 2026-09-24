@@ -1,0 +1,47 @@
+.formulario {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Estado :focus diferenciado */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #432c4a;
+    box-shadow: 0 0 0 3px rgba(44, 74, 62, 0.15);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #432c4a;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #8d6091;
+}
+
+button:active {
+    transform: scale(0.97);
+}

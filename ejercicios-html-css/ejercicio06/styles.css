@@ -1,0 +1,25 @@
+/* Selector de clase: aplica a todos los elementos con class="card" */
+.card {
+    border: 1px solid #cccccc;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+/* Selector de ID: aplica únicamente al elemento con ese id, más específico que la clase */
+#tarjeta-destacada {
+    background-color: #fff4e0;
+    border-color: #e0a94c;
+}
+
+/* Selector descendiente: aplica solo a los <p> que estén dentro de .card */
+.card p {
+    font-weight: bold;
+    color: #2c4a3e;
+}
+
+/* Selector de etiqueta: aplica a todos los <span> del documento */
+span {
+    font-style: italic;
+    color: #666666;
+}

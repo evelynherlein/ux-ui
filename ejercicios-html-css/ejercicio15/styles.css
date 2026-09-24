@@ -1,0 +1,63 @@
+/* Enfoque: desktop first. Se parte del layout completo de escritorio (heredado del Ejercicio 10)
+   y se lo adapta progresivamente para pantallas más chicas con max-width, que es lo más simple
+   de aplicar sobre un layout ya existente pensado para escritorio. */
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header  header"
+        "sidebar contenido"
+        "footer  footer";
+    min-height: 100vh;
+    gap: 12px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #432c4a;
+    color: #ffffff;
+    padding: 16px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f0ede4;
+    padding: 16px;
+}
+
+.contenido {
+    grid-area: contenido;
+    padding: 16px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #432c4a;
+    color: #ffffff;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Breakpoint 1: tablets. El sidebar se reduce un poco. */
+@media (max-width: 1024px) {
+    .layout {
+        grid-template-columns: 160px 1fr;
+    }
+}
+
+/* Breakpoint 2: menor a 768px. El sidebar desaparece y todo pasa a una sola columna. */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "contenido"
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

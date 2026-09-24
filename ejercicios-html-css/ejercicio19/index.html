@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 19 - Formulario multi-step con validación visual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro en 2 pasos</h1>
+
+    <!-- Truco de radio buttons: solo se muestra la sección cuyo radio está marcado -->
+    <input type="radio" name="paso" id="ir-paso-1" class="control-paso" checked>
+    <input type="radio" name="paso" id="ir-paso-2" class="control-paso">
+
+    <form action="#" method="post" class="form-multistep">
+        <section class="paso paso-1">
+            <h2>Paso 1: Datos de acceso</h2>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="password">Contraseña (mínimo 6 caracteres):</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </div>
+
+            <label for="ir-paso-2" class="boton-siguiente">Siguiente →</label>
+        </section>
+
+        <section class="paso paso-2">
+            <h2>Paso 2: Datos personales</h2>
+
+            <div class="campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8,15}" required>
+            </div>
+
+            <label for="ir-paso-1" class="boton-anterior">← Anterior</label>
+            <button type="submit">Registrarme</button>
+        </section>
+    </form>
+</body>
+</html>
